@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anelisi</title>
+</head>
+<style>
+    body {
+        background-color: darkkhaki;
+        color: indigo;
+        font: normal 20pt TimesNewsRoman;
+    }
+</style>
+
+<body>
+    <h1> It Family </h1>
+    <p>Welcome! Here we are apassionate about IT...</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) //exibe msg + campo para digitar + OK + CANCELAR
+        var n2 = Number(window.prompt('Digite um outro número: '))
+        var s = n1 + n2
+        var premio = `50000`
+        premio.toLocaleString(`pt-br, {style: 'currency', currency: 'BRL'})
+                window.alert('A soma entre $ {n1} e $ {n2} é $ {s})
+    </script>
+</body>
+
+</html>
