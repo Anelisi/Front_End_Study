@@ -1,0 +1,51 @@
+JavaScript
+
+========================================= COMANDOS COM WINDOW.=====================================================
+
+window.prompt()serve para exibir msg + campo para digitar + OK + CANCELAR
+
+window.alert() serve para exibir msg + OK
+
+window.confirm() serve para exibir msg + OK + CANCELAR
+
+======================================== CONCATENAÇÕES E CONVERSÕES DE TIPAGEM=====================================
+
+O + para strings, concatena; 
+     String + String
+	 '4' + '2' = 42
+
+O + para numbers, soma;
+    number + number
+	4 + 2 = 6
+
+    -- CUIDADO --- 
+O window.prompt sempre retornará strings por mais que haja número, para isso há a conversão da tipagem 
+
+  *** String para números ***
+       Number.ParseInt 
+             ou 
+       Number.ParseFloat 
+             ou 
+       apenas Number 
+	   
+  *** Números para String ***
+   Conversões de número para String é... 
+       n.toString() 
+	       ou 
+	  apenas String
+	  
+============================================== FORMATAÇÃO DE STRINGS ================================================
+var s = 'JavaScript'
+
+'Eu estou aprendendo ' + s // usa concatenação;
+`Eu estou aprendendo ${s}` // usa Template String com CRASES
+
+
+Place Holder ==`${}`
+
+É usado entre CRASES
+
+
+ 
+
+

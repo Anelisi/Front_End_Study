@@ -18,12 +18,12 @@
     <h1> It Family </h1>
     <p>Welcome! Here we are apassionate about IT...</p>
     <script>
-        var n1 = Number(window.prompt('Digite um número: ')) //exibe msg + campo para digitar + OK + CANCELAR
-        var n2 = Number(window.prompt('Digite um outro número: '))
-        var s = n1 + n2
-        var premio = `50000`
-        premio.toLocaleString(`pt-br, {style: 'currency', currency: 'BRL'})
-                window.alert('A soma entre $ {n1} e $ {n2} é $ {s})
+        var nome = window.prompt('Olá! Qual o seu nome?')
+        window.alert('É um grande prazer te conhecer, ' + nome + '!')
+        var n1 = Number(window.prompt('Digite um número: ')) // prompt para exibir msg + campo para digitar + OK + CANCELAR
+        var n2 = Number(window.prompt('Digite um outro número: ')) //  CUIDADO --- O windown.prompt sempre retornará strings por mais que haja números, para isso foi feita a  conversão da tipagem (ex: Number.ParseInt ou  Number.ParseFloat ou apenas Number) e conversões de número para String é...  n.toString() ou apenas String
+        var s = n1 + n2 //  o + para strings, concatena;  + para numbers, soma...
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}`)
     </script>
 </body>
 

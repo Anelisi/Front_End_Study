@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Ani no Front-End</title>
+</head>
+
+<body>
+    <script>
+        var nome = window.prompt('Olá! Qual é o seu nome? ')
+        var p = 500000000
+        document.write(`Olá, <strong>${nome}</strong>! </br> Seu nome tem ${nome.length} letras </br> E em maiúsculas fica assim <strong>${nome.toLocaleUpperCase()}</strong> e em minúsculas fica assim <strong>${nome.toLocaleLowerCase()}</strong></br> Seu premio é no valor de ${p.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+
+</html>
