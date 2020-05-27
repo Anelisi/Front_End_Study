@@ -4,11 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background: lavender;
+            color: lightseagreen;
+            font: normal 14pt Arial;
+        }
+    </style>
 </head>
 
 <body>
-
+    <h1>Iniciando os estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo o <strong>DOM</strong> no Javascript</p>
+    <div id="msg">Clique em mim</div>
 </body>
-
-</html>
+<script>
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagName('p')[0]
+    var d = window.document.getElementById('msg')
+    d.style.background = 'purple'
+    d.innerText = 'Aguarde...'
+</script>
+</h1>
