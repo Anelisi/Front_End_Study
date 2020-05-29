@@ -45,7 +45,46 @@ Place Holder ==`${}`
 
 É usado entre CRASES
 
+================================================ DOM WINDOW ========================================================== 
 
+Entre <script> podemos colocar uma variável redendo o valor de alguma tag do código pelo DOM.
+Ex:
+
+<script>
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagName('p')[0] ............ // Variável para chamar a parte que se quer trabalhar pelo DOM
+    window.document.write('Está escrito: ' + p1.innerText)............// Para reproduzir o que está escrito em p[0]
+    corpo.style.background = 'pink'................................. // Para alterar a cor de fundo do site todo
+    p1.style.color = 'blue' ......................................  // Para alterar a cor da letra desta variável
+</script>
+
+ATENÇÃO!!!
+Ao solicitar a escrita do p[0] por innerText este retornará somente as strings sem as configurações do tipo <strong> ou relativas à CSS.
+Para que o retorno seja íntegro ao p[0] devemos solicitá-lo por innerHTML.
+
+********************************************************************************************************************************************
+Ex por ID:
+
+<body>
+    <h1>Iniciando os estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo o <strong>DOM</strong> no Javascript</p>
+    <div id="msg">Clique em mim</div> ......................................// Dentro da tag se é colocado o id
+</body>
+<script>
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagName('p')[0]
+    var d = window.document.getElementById('msg')........................// Variável para chamar a parte que se quer trabalhar pelo DOM
+    d.style.background = 'purple'...................................... // Para alterar o fundo APENAS da reprodução da div solicitada
+    d.innerText = 'Aguarde!'    ...................................... // Altera pelo DOM o que está escrito na div solicitada
+</script>
+
+
+
+ATENÇÃO!!!
+Toda classe é representada por ponto (.)
+Todo ID é representado por cerquilha (#)
+***********************************************************************************************************************************************
  
 
 

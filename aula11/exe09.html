@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO</title>
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+    Pais de origem: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="resgistra()">
+    <div id="res">
+
+    </div>
+    <script>
+        function resgistra() {
+            var txtpais = document.getElementById('pais')
+            var res = document.querySelector('div#res')
+            var deonde = (txtpais.value)
+            res.innerHTML = `<p>Seu país de origem é <strong>${deonde}</strong></p>`
+            if (deonde != 'Brasil') {
+                res.innerHTML += '<p>E no Brasil você é um estrangeiro!\n Seja muito bem-vindo!</p>'
+            } else
+                res.innerHTML += '<p>E no Brasil você é um brasileiro nato!</p>'
+        }
+    </script>
+
+</body>
+
+</html>
