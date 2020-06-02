@@ -1,0 +1,44 @@
+body {
+    background: lavender;
+    color: lightseagreen;
+    font: normal 26pt Arial;
+    text-align: center;
+}
+
+button {
+    font: bold 20pt Arial;
+    background: lightskyblue;
+    color: purple;
+    height: 40px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    color: purple;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+}
+
+div {
+    padding: 8px;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px whitesmoke;
+}
+
+footer {
+    text-align: center;
+    color: purple;
+    font-size: small;
+    font-weight: bolder;
+    padding: 20px;
+}

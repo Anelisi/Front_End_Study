@@ -20,6 +20,12 @@
             height: 40px;
             text-align: center;
         }
+        
+        section {
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+        }
     </style>
 </head>
 
@@ -29,6 +35,12 @@
     <button onclick="infoDate()">Clique Aqui</button>
 
     <p id="horaCerta"></p>
+
+    <section>
+        <div id="foto">
+            <img id="imagem" src="entrada.png" alt="Foto do dia">
+        </div>
+    </section>
 
     <script>
         function addZero(i) {
@@ -44,6 +56,7 @@
             var diaSemana = agora.getDay();
             var hora = addZero(agora.getHours());
             var min = addZero(agora.getMinutes());
+            var img = document.getElementById('imagem')
 
             switch (diaSemana) {
                 case 0:
@@ -64,18 +77,22 @@
                 case 5:
                     var dia = 'Sexta-feira'
                     break
+                case 6:
+                    var dia = 'Sábado'
             }
-
-
 
             if (hora < 7) {
                 h.innerHTML = (`Hoje é <strong>${dia}</strong> e são <strong>${hora}:${min}</strong> da madrugada<br>Tenha uma ótima madrugada!`)
+                img.src = 'madrugada.png'
             } else if (hora < 12) {
                 h.innerHTML = (`Hoje é <strong>${dia}</strong> e são <strong>${hora}:${min}</strong> da manhã!<br>Tenha um ótimo dia!`)
+                img.src = 'manha.png'
             } else if (hora < 19) {
                 h.innerHTML = (`Hoje é <strong>${dia}</strong> e são <strong>${hora}:${min}</strong> da tarde<br>Tenha uma ótima tarde!`)
+                img.src = 'tarde.png'
             } else {
                 h.innerHTML = (`Hoje é <strong>${dia}</strong> e são <strong>${hora}:${min}</strong> da noite<br>Tenha uma ótima noite!`)
+                img.src = 'noite.png'
             }
         }
     </script>
