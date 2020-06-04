@@ -12,6 +12,11 @@ div {
     text-align: center;
 }
 
+#botao {
+    padding: 10px;
+    font: normal 20px Arial;
+}
+
 section {
     background-color: white;
     border-radius: 10px;

@@ -11,9 +11,17 @@ function verificar() {
         var genero = ''
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
+
+
         if (sexf[0].checked) {
             genero = 'Mulher'
+            if (idade < 12) {
+                genero = 'Menina'
+            } else if (idade < 18) {
+                genero = 'Adolecente'
+            }
             if (idade <= 4) {
+                res.innerHTML = `Detectamos <strong>${genero}</strong> com <strong>${idade}</strong> anos`
                 img.setAttribute('src', 'menina_n.png')
                     // nene
             } else if (idade < 10) {
@@ -32,6 +40,11 @@ function verificar() {
             }
         } else if (sexf[1].checked) {
             genero = 'Homem'
+            if (idade < 12) {
+                genero = 'Menino'
+            } else if (idade < 18) {
+                genero = 'Adolecente'
+            }
             if (idade <= 4) {
                 img.setAttribute('src', 'menino_n.png')
                     // nene
@@ -55,7 +68,5 @@ function verificar() {
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos <strong>${genero}</strong> com <strong>${idade}</strong> anos`
         res.appendChild(img)
-        document.getElementById('botao').style.font = '20px'
-
     }
 }
