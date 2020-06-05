@@ -87,4 +87,33 @@ Todo ID é representado por cerquilha (#)
 ***********************************************************************************************************************************************
  
 
+================================================================== ADD FOTOS NO SITE ==========================================================
+
+POR HTML:
+
+<section>
+        <div id="foto">
+            <img id="imagem" src="entrada.png" alt="Foto do dia">
+        </div>
+</section>
+
+no JS => 
+
+var img = document.getElementById('imagem')
+
+img.src = 'madrugada.png' // para alterar a foto
+
+*****************************************************************************************************************************************
+
+POR JS:
+
+var img = document.createElement('img')
+img.setAttribute('id', 'foto')
+
+...
+
+ img.setAttribute('src', 'menina_n.png') // para adicionar a foto.
+
+
+
 

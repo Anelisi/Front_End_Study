@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Eletrônico 24 HORAS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Caixa Eletrônico 24 HORAS
+        </h1>
+    </header>
+    <section>Outro valor de saque <input type="button" value="Sacar" id="botsacar" onclick="contar()">
+    </section>
+
+    <div id="mae">
+        <div id="dados_direita">
+
+            <div><input type="button" value="   100,00   " id="b100" onclick="contar()"></div>
+            <div><input type="button" value="    50,00    " id="b50" onclick="contar()"></div>
+            <div><input type="button" value="    20,00    " id="b20" onclick="contar()"></div>
+        </div>
+        <div id="dados_esquerda">
+            <div><input type="button" value="    10,00    " id="b10" onclick="contar()"></div>
+            <div><input type="button" value="     5,00     " id="b5" onclick="contar()"></div>
+            <div><input type="button" value="     2,00     " id="b2" onclick="contar()"></div>
+        </div>
+    </div>
+
+    <div id="res">
+        <p>Notas para saque: </p>
+    </div>
+
+    <footer>
+        &copy;Anelisi Landarin Meller Corp.
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

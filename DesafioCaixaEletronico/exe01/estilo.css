@@ -1,0 +1,106 @@
+body {
+    background: whitesmoke;
+    font: normal 15pt Arial;
+}
+
+header {
+    text-align: center;
+    color: grey;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 363);
+    font: bolder 26px Arial;
+    color: grey;
+}
+
+#botsacar {
+    background: #18bf18;
+    border-radius: 8px;
+    padding: 8px;
+    font: bolder 20px Arial;
+    box-shadow: 4px 4px 9px rgb(228, 216, 218);
+    margin-left: 6cm;
+    color: #393b41;
+}
+
+#mae {
+    display: flex;
+}
+
+#dados_direita {
+    padding: 100px 100px 20px 100px;
+    margin-left: 2cm;
+    font: normal 20px Arial;
+    margin-bottom: 10px;
+    display: flexbox;
+    flex-direction: column-reverse;
+}
+
+#dados_esquerda {
+    padding: 100px 100px 20px 100px;
+    margin-left: 17cm;
+    font: normal 20px Arial;
+    margin-bottom: 10px;
+    display: flexbox;
+    flex-direction: column-reverse;
+}
+
+#b100 {
+    padding: 40px;
+    font: bold 26px Arial;
+    margin-bottom: 10px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 363);
+}
+
+#b50 {
+    padding: 40px;
+    font: bold 26px Arial;
+    margin-bottom: 10px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 363);
+}
+
+#b20 {
+    padding: 40px;
+    font: bold 26px Arial;
+    margin-bottom: 10px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 363);
+}
+
+#b10 {
+    padding: 40px;
+    font: bold 26px Arial;
+    margin-bottom: 10px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 363);
+}
+
+#b5 {
+    padding: 40px;
+    font: bold 26px Arial;
+    margin-bottom: 10px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 363);
+}
+
+#b2 {
+    padding: 40px;
+    font: bold 26px Arial;
+    margin-bottom: 10px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 363);
+}
+
+#res {
+    margin-left: 5cm;
+    font: bolder 20px Arial;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+    font-style: italic;
+}

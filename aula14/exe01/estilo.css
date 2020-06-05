@@ -17,6 +17,12 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 363);
 }
 
+#botao {
+    padding: 10px;
+    font: normal 20px Arial;
+    margin-bottom: 10px;
+}
+
 footer {
     margin-top: 20px;
     text-align: center;
