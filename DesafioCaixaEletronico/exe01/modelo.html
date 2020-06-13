@@ -14,25 +14,30 @@
             Caixa Eletrônico 24 HORAS
         </h1>
     </header>
-    <section>Outro valor de saque <input type="button" value="Sacar" id="botsacar" onclick="contar()">
+    <section>
+        <input type="number" id="outroValor" placeholder="Outro valor de saque">
+        <input type="button" value="Sacar" id="botsacar" onclick="contar('outroValor')">
     </section>
 
     <div id="mae">
         <div id="dados_direita">
 
-            <div><input type="button" value="   100,00   " id="b100" onclick="contar()"></div>
-            <div><input type="button" value="    50,00    " id="b50" onclick="contar()"></div>
-            <div><input type="button" value="    20,00    " id="b20" onclick="contar()"></div>
+            <div><input type="button" value="   100,00   " id="b100" onclick="contar('100')"></div>
+            <div><input type="button" value="    50,00    " id="b50" onclick="contar('50')"></div>
+
         </div>
+        <section id="vSaque">
+            <p> Bem Vinda(o) ao Anelisi Bank <img src="aniBank.png" alt=""><br><strong id="res"></strong></p>
+        </section>
         <div id="dados_esquerda">
-            <div><input type="button" value="    10,00    " id="b10" onclick="contar()"></div>
-            <div><input type="button" value="     5,00     " id="b5" onclick="contar()"></div>
-            <div><input type="button" value="     2,00     " id="b2" onclick="contar()"></div>
+            <div><input type="button" value="    20,00    " id="b20" onclick="contar('20')"></div>
+            <div><input type="button" value="    10,00    " id="b10" onclick="contar('10')"></div>
+
         </div>
     </div>
 
-    <div id="res">
-        <p>Notas para saque: </p>
+    <div id="notasSaque">
+        <p>Notas para saque: <strong id="nNotas"></strong></p>
     </div>
 
     <footer>
