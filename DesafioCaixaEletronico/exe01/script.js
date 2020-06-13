@@ -8,7 +8,7 @@ function contar(valor) {
                 break
             }
             document.getElementById('vSaque').innerHTML = `R$ ${outroValor},00 </br>Saque realizado com sucesso!<br><id="res"></strong>`
-            //document.getElementById('res').innerHTML = 'R$ ' + outroValor + ',00'
+                //document.getElementById('res').innerHTML = 'R$ ' + outroValor + ',00'
             break
         default:
             if (isNaN(valor)) {
@@ -17,7 +17,7 @@ function contar(valor) {
             }
             document.getElementById('vSaque').innerHTML = `R$ ${valor},00 </br>Saque realizado com sucesso<br><id="res"></strong>`
     }
-         // NOTAS PARA SAQUE
+    // NOTAS PARA SAQUE
     if (Number(valor % 100 == 0)) {
         var n100 = valor / 100
         document.getElementById('nNotas').innerHTML = `${n100} nota de R$100,00`
@@ -36,7 +36,7 @@ function contar(valor) {
         let nots100 = outroValor / 100
         document.getElementById('nNotas').innerHTML = `${nots100} notas de R$100,00`
     } else {
-        let resto = (outroValor/100).toFixed(2).split('.')
+        let resto = (outroValor / 100).toFixed(2).split('.')
         let n1001 = parseInt(resto[0])
         let n1002 = parseInt(resto[1])
         nots100 = n1001
